@@ -3,6 +3,8 @@ CleanFS
 
 A proposal for a new [Flyspray](http://flyspray.org/) theme.
 
+You can find more info, and discussion on flyspray's [mailing group](http://groups.google.com/group/flyspray/browse_frm/thread/6bcfdfb6d17f92bf)
+
 Usage
 -----
 
