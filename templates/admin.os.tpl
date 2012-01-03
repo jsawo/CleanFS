@@ -1,5 +1,5 @@
 <div id="toolbox">
-  <h3>{L('admintoolboxlong')} :: {L('oslist')}</h3>
+  <h3>{L('oslist')}</h3>
 
   <?php
   $this->assign('list_type', 'os');

@@ -1,5 +1,5 @@
 <div id="toolbox">
-  <h3>{L('admintoolboxlong')} :: {L('createnewproject')}</h3>
+  <h3>{L('createnewproject')}</h3>
   <form action="{CreateURL('admin', 'newproject')}" method="post">
     <div>
       <input type="hidden" name="action" value="admin.newproject" />

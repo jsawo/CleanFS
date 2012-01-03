@@ -1,5 +1,5 @@
 <div id="toolbox">
-  <h3>{L('admintoolboxlong')} :: {L('usersandgroups')}</h3>
+  <h3>{L('usersandgroups')}</h3>
   <p>
     <!--<img src="{$this->get_image('personal')}" alt="" class="middle" /> --><a href="{CreateURL('admin', 'newuser', $proj->id)}">{L('newuser')}</a>
   </p>

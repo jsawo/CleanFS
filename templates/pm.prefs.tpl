@@ -1,5 +1,5 @@
 <div id="toolbox">
-  <h3>{L('pmtoolbox')} ::  {$proj->prefs['project_title']} : {L('preferences')}</h3>
+  <h3>{$proj->prefs['project_title']} : {L('preferences')}</h3>
 
   <form action="{CreateUrl('pm', 'prefs', $proj->id)}" method="post">
   <ul id="submenu">

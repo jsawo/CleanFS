@@ -1,5 +1,5 @@
 <div id="toolbox">
-  <h3>{L('pmtoolbox')} :: {L('pendingrequests')}</h3>
+  <h3>{L('pendingrequests')}</h3>
   
   <?php if (!count($pendings)): ?>
   {L('nopendingreq')}

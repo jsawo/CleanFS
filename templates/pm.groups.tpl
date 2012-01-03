@@ -1,5 +1,5 @@
 <div id="toolbox">
-  <h3>{L('pmtoolbox')} :: {$proj->prefs['project_title']} : {L('groupmanage')}</h3>
+  <h3>{$proj->prefs['project_title']} : {L('groupmanage')}</h3>
   <?php if ($user->perms('is_admin')): ?>
   <p>
     <!--<img src="{$this->get_image('personal')}" alt="" class="middle" />-->

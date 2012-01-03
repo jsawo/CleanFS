@@ -1,5 +1,5 @@
 <div id="toolbox">
-  <h3>{L('pmtoolbox')} :: {$proj->prefs['project_title']} : {L('taskstatuses')}</h3>
+  <h3>{$proj->prefs['project_title']} : {L('taskstatuses')}</h3>
 
   <?php
   $this->assign('list_type', 'status');
