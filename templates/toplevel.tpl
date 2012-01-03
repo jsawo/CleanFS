@@ -1,28 +1,42 @@
-<?php if (!count($projects)): ?>
+<?php $project_count = count($projects);
+
+if (!$project_count): ?>
 <div class="box">
 <h2>{L('allprivate')}</h2>
 </div>
 <?php endif; ?>
 
-<?php foreach ($projects as $project): ?>
-<div class="box">
+<?php
+foreach ($projects as $project): ?>
+<div class="box<?php if ($project_count == 1) echo ' single-project' ?>">
 <h2><a href="{CreateUrl('project', $project['project_id'])}">{$project['project_title']}</a></h2>
-
 
 <table class="toplevel">
   <tr>
     <th><strong>{L('viewtasks')}</strong></th>
     <td>
-        <a href="{$_SERVER['SCRIPT_NAME']}?do=index&amp;project={$project['project_id']}&amp;status[]=">{L('All')}</a> |
-        <a href="{$_SERVER['SCRIPT_NAME']}?do=index&amp;project={$project['project_id']}&amp;status[]=open">{L('open')}</a> |
+        <a href="{$_SERVER['SCRIPT_NAME']}?do=index&amp;project={$project['project_id']}&amp;status[]=">{L('All')}</a> -
+        <a href="{$_SERVER['SCRIPT_NAME']}?do=index&amp;project={$project['project_id']}&amp;status[]=open">{L('open')}</a> -
         <a href="{$_SERVER['SCRIPT_NAME']}?do=index&amp;project={$project['project_id']}&amp;openedfrom=-1+week">{L('recentlyopened')}</a>
         <?php if (!$user->isAnon()): ?>
           <br />
-          <a href="{$_SERVER['SCRIPT_NAME']}?do=index&amp;project={$project['project_id']}&amp;dev={$user->id}">{L('assignedtome')}</a> |
-          <a href="{$_SERVER['SCRIPT_NAME']}?do=index&amp;project={$project['project_id']}&amp;only_watched=1">{L('taskswatched')}</a> |
+          <a href="{$_SERVER['SCRIPT_NAME']}?do=index&amp;project={$project['project_id']}&amp;dev={$user->id}">{L('assignedtome')}</a> -
+          <a href="{$_SERVER['SCRIPT_NAME']}?do=index&amp;project={$project['project_id']}&amp;only_watched=1">{L('taskswatched')}</a> -
           <a href="{$_SERVER['SCRIPT_NAME']}?do=index&amp;project={$project['project_id']}&amp;opened={$user->id}">{L('tasksireported')}</a>
         <?php endif; ?>
     </td>
+    
+    <?php if ($project_count == 1 and isset($most_wanted[$project['project_id']])): ?>
+    <td rowspan="4">
+      <strong>{L('mostwanted')}</strong>
+        <ul>
+            <?php foreach($most_wanted[$project['project_id']] as $task): ?>
+            <li>{!tpl_tasklink($task['task_id'])}, {$task['num_votes']} {L('vote(s)')}</li>
+            <?php endforeach; ?>
+        </ul>
+    </td>
+    <?php endif; ?>
+
   </tr>
   <tr>
     <th><strong>{L('stats')}</strong></th>
@@ -37,26 +51,9 @@
         <div class="progress_bar_container">
           <span>{$stats[$project['project_id']]['average_done']}%</span>
           <div class="progress_bar" style="width:{$stats[$project['project_id']]['average_done']}%"></div>
-        </div>
-        
-<!--        <img src="{$this->get_image('percent-' . round($stats[$project['project_id']]['average_done']/10)*10)}"
-                    title="{(round($stats[$project['project_id']]['average_done']/10)*10)}% {L('complete')}"
-                    alt="" width="100" height="10" />
--->
+        </div>        
     </td>
   </tr>
-  <?php if (isset($most_wanted[$project['project_id']])): ?>
-  <tr>
-    <th><strong>{L('mostwanted')}</strong></th>
-    <td>
-        <ul>
-            <?php foreach($most_wanted[$project['project_id']] as $task): ?>
-            <li>{!tpl_tasklink($task['task_id'])}, {$task['num_votes']} {L('vote(s)')}</li>
-            <?php endforeach; ?>
-        </ul>
-    </td>
-  </tr>
-  <?php endif; ?>
   <tr>
     <th><strong>{L('feeds')}</strong></th>
     <td>
@@ -75,6 +72,8 @@
   </tr>
 </table>
 </div>
-<?php endforeach; ?>
+<?php
+endforeach;
+?>
 
 <div class="clear"></div>

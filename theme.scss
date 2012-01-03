@@ -403,7 +403,17 @@ body.toplevel .box{
   margin: 10px 0 0 10px;
   width: 400px;
   height: 215px;
+  /*height: 280px;*/
+  /*@include inline-block;*/
+  /*vertical-align: middle;*/
   float: left;
+}
+
+body.toplevel .single-project{
+  width: auto;
+  float: none;
+  display: block;
+  height: auto;
 }
 
 .progress_bar_container{

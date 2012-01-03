@@ -6,6 +6,7 @@
 /* ----------------- VARIABLES --------------------- */
 /*$far_background: #dcdcdc;*/
 /*$top1: lighten(#292626, 2%);*/
+/*$dominant: #2C6FB2;*/
 /*$dominant: #A82F21;*/
 /*$link: #0066CC;*/
 /*lighten(#F9F2F2, 1%);*/
@@ -439,10 +440,21 @@ body.toplevel .box {
   margin: 10px 0 0 10px;
   width: 400px;
   height: 215px;
+  /*height: 280px;*/
+  /*@include inline-block;*/
+  /*vertical-align: middle;*/
   float: left;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/fs\/themes\/cleanfs\/theme\.scss}line{font-family:\00003409}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/fs\/themes\/cleanfs\/theme\.scss}line{font-family:\00003412}}
+body.toplevel .single-project {
+  width: auto;
+  float: none;
+  display: block;
+  height: auto;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/fs\/themes\/cleanfs\/theme\.scss}line{font-family:\00003419}}
 .progress_bar_container {
   width: 150px;
   margin: 0 5px;
@@ -461,7 +473,7 @@ body.toplevel .box {
   /* target IE7 only */
   vertical-align: sub;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/fs\/themes\/cleanfs\/theme\.scss}line{font-family:\00003419}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/fs\/themes\/cleanfs\/theme\.scss}line{font-family:\00003429}}
 .progress_bar_container .progress_bar {
   height: 100%;
   background: #5f9729;
@@ -483,7 +495,7 @@ body.toplevel .box {
   background-image: -o-linear-gradient(#acdc7d, #78bf34);
   /* Opera 11.10+ */
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/fs\/themes\/cleanfs\/theme\.scss}line{font-family:\00003430}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/fs\/themes\/cleanfs\/theme\.scss}line{font-family:\00003440}}
 .progress_bar_container span {
   text-align: center;
   position: absolute;
@@ -494,60 +506,60 @@ body.toplevel .box {
   text-shadow: 0 0 6px white;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/fs\/themes\/cleanfs\/theme\.scss}line{font-family:\00003442}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/fs\/themes\/cleanfs\/theme\.scss}line{font-family:\00003452}}
 td.task_progress .progress_bar_container {
   width: 100%;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/fs\/themes\/cleanfs\/theme\.scss}line{font-family:\00003447}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/fs\/themes\/cleanfs\/theme\.scss}line{font-family:\00003457}}
 a {
   text-decoration: none;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/fs\/themes\/cleanfs\/theme\.scss}line{font-family:\00003451}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/fs\/themes\/cleanfs\/theme\.scss}line{font-family:\00003461}}
 #tasklist_table {
   border-bottom: solid 1px #a1a6a8;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/fs\/themes\/cleanfs\/theme\.scss}line{font-family:\00003454}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/fs\/themes\/cleanfs\/theme\.scss}line{font-family:\00003464}}
 #tasklist_table th {
   /*padding: 0 4px;*/
   background: #3c4041;
   background: white;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/fs\/themes\/cleanfs\/theme\.scss}line{font-family:\00003459}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/fs\/themes\/cleanfs\/theme\.scss}line{font-family:\00003469}}
 #tasklist_table th img {
   position: relative;
   top: 2px;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/fs\/themes\/cleanfs\/theme\.scss}line{font-family:\00003464}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/fs\/themes\/cleanfs\/theme\.scss}line{font-family:\00003474}}
 #tasklist_table th a {
   /*color: $inverse_link;*/
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/fs\/themes\/cleanfs\/theme\.scss}line{font-family:\00003469}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/fs\/themes\/cleanfs\/theme\.scss}line{font-family:\00003479}}
 #tasklist_table td {
   cursor: pointer;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/fs\/themes\/cleanfs\/theme\.scss}line{font-family:\00003473}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/fs\/themes\/cleanfs\/theme\.scss}line{font-family:\00003483}}
 #tasklist_table tr.current_row td.caret {
   background-image: url(img/caret.gif);
   background-repeat: no-repeat;
   background-position: 3px;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/fs\/themes\/cleanfs\/theme\.scss}line{font-family:\00003477}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/fs\/themes\/cleanfs\/theme\.scss}line{font-family:\00003487}}
 #tasklist_table td.caret {
   width: 15px;
   padding: 0 !important;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/fs\/themes\/cleanfs\/theme\.scss}line{font-family:\00003482}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/fs\/themes\/cleanfs\/theme\.scss}line{font-family:\00003492}}
 #tasklist_table .ttcolumn {
   width: 10px;
   text-align: center;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/fs\/themes\/cleanfs\/theme\.scss}line{font-family:\00003486}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/fs\/themes\/cleanfs\/theme\.scss}line{font-family:\00003496}}
 #tasklist_table .ttcolumn input {
   margin: 0;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/fs\/themes\/cleanfs\/theme\.scss}line{font-family:\00003490}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/fs\/themes\/cleanfs\/theme\.scss}line{font-family:\00003500}}
 #tasklist_table .ttcolumn a {
   background-image: url(img/black/loop_alt3_12x9.png);
   background-repeat: no-repeat;
@@ -556,13 +568,13 @@ a {
   height: 30px;
   display: block;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/fs\/themes\/cleanfs\/theme\.scss}line{font-family:\00003500}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/fs\/themes\/cleanfs\/theme\.scss}line{font-family:\00003510}}
 #tasklist_table thead th {
   border-bottom: solid 1px #a1a6a8;
   border-top: solid 1px #a1a6a8;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/fs\/themes\/cleanfs\/theme\.scss}line{font-family:\00003506}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/fs\/themes\/cleanfs\/theme\.scss}line{font-family:\00003516}}
 a.toggle_selected {
   background-image: url(img/black/loop_alt3_12x9.png);
   background-repeat: no-repeat;
@@ -572,57 +584,57 @@ a.toggle_selected {
   display: block;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/fs\/themes\/cleanfs\/theme\.scss}line{font-family:\00003515}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/fs\/themes\/cleanfs\/theme\.scss}line{font-family:\00003525}}
 tr.severity1 .task_severity {
   background-color: white;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/fs\/themes\/cleanfs\/theme\.scss}line{font-family:\00003516}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/fs\/themes\/cleanfs\/theme\.scss}line{font-family:\00003526}}
 tr.severity2 .task_severity {
   background-color: white;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/fs\/themes\/cleanfs\/theme\.scss}line{font-family:\00003517}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/fs\/themes\/cleanfs\/theme\.scss}line{font-family:\00003527}}
 tr.severity3 .task_severity {
   background-color: #f5e7e7;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/fs\/themes\/cleanfs\/theme\.scss}line{font-family:\00003518}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/fs\/themes\/cleanfs\/theme\.scss}line{font-family:\00003528}}
 tr.severity4 .task_severity {
   background-color: #f5dddd;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/fs\/themes\/cleanfs\/theme\.scss}line{font-family:\00003519}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/fs\/themes\/cleanfs\/theme\.scss}line{font-family:\00003529}}
 tr.severity5 .task_severity {
   background-color: #f5d1d1;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/fs\/themes\/cleanfs\/theme\.scss}line{font-family:\00003521}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/fs\/themes\/cleanfs\/theme\.scss}line{font-family:\00003531}}
 tr.severity1:hover td {
   background-color: #f2f2f2 !important;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/fs\/themes\/cleanfs\/theme\.scss}line{font-family:\00003522}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/fs\/themes\/cleanfs\/theme\.scss}line{font-family:\00003532}}
 tr.severity2:hover td {
   background-color: #f2f2f2 !important;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/fs\/themes\/cleanfs\/theme\.scss}line{font-family:\00003523}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/fs\/themes\/cleanfs\/theme\.scss}line{font-family:\00003533}}
 tr.severity3:hover td {
   background-color: #eed4d4 !important;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/fs\/themes\/cleanfs\/theme\.scss}line{font-family:\00003524}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/fs\/themes\/cleanfs\/theme\.scss}line{font-family:\00003534}}
 tr.severity4:hover td {
   background-color: #efc9c9 !important;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/fs\/themes\/cleanfs\/theme\.scss}line{font-family:\00003525}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/fs\/themes\/cleanfs\/theme\.scss}line{font-family:\00003535}}
 tr.severity5:hover td {
   background-color: #f0bcbc !important;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/fs\/themes\/cleanfs\/theme\.scss}line{font-family:\00003527}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/fs\/themes\/cleanfs\/theme\.scss}line{font-family:\00003537}}
 div#toolbox {
   margin: 10px 0px 10px 0px;
   padding: 10px;
@@ -638,7 +650,7 @@ div#toolbox {
   /*  margin-top: 10px;*/
   /*}*/
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/fs\/themes\/cleanfs\/theme\.scss}line{font-family:\00003538}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/fs\/themes\/cleanfs\/theme\.scss}line{font-family:\00003548}}
 div#toolbox div.tab {
   margin: 10px 0px 10px 0px;
   padding: 10px;
@@ -646,22 +658,22 @@ div#toolbox div.tab {
   border: solid 1px #d9d9d9;
   border-radius: 3px;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/fs\/themes\/cleanfs\/theme\.scss}line{font-family:\00003542}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/fs\/themes\/cleanfs\/theme\.scss}line{font-family:\00003552}}
 div#toolbox #submenu {
   /*margin-top: -46px;*/
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/fs\/themes\/cleanfs\/theme\.scss}line{font-family:\00003546}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/fs\/themes\/cleanfs\/theme\.scss}line{font-family:\00003556}}
 div#toolbox h3 {
   margin-bottom: 1em;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/fs\/themes\/cleanfs\/theme\.scss}line{font-family:\00003551}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/fs\/themes\/cleanfs\/theme\.scss}line{font-family:\00003561}}
 div#toolboxmenu {
   position: relative;
   float: left;
   padding-top: 10px;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/fs\/themes\/cleanfs\/theme\.scss}line{font-family:\00003556}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/fs\/themes\/cleanfs\/theme\.scss}line{font-family:\00003566}}
 div#toolboxmenu a {
   display: block;
   border: 1px solid #cdcdcd;
@@ -679,12 +691,12 @@ div#toolboxmenu a {
   -moz-border-bottom-left-radius: 5px;
   -webkit-border-bottom-left-radius: 5px;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/fs\/themes\/cleanfs\/theme\.scss}line{font-family:\00003574}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/fs\/themes\/cleanfs\/theme\.scss}line{font-family:\00003584}}
 div#toolboxmenu a:hover {
   background-color: #d6d8d9;
   /*color: $inverse_link;*/
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/fs\/themes\/cleanfs\/theme\.scss}line{font-family:\00003579}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/fs\/themes\/cleanfs\/theme\.scss}line{font-family:\00003589}}
 div#toolboxmenu a.active {
   margin-left: 0;
   font-weight: bold;
@@ -697,7 +709,7 @@ div#toolboxmenu a.active {
   border-left: 2px solid #78bf34;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/fs\/themes\/cleanfs\/theme\.scss}line{font-family:\00003592}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/fs\/themes\/cleanfs\/theme\.scss}line{font-family:\00003602}}
 #controlBox {
   border: 1px solid gray;
   padding: 1px;
@@ -707,25 +719,25 @@ div#toolboxmenu a.active {
   display: table;
   position: absolute;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/fs\/themes\/cleanfs\/theme\.scss}line{font-family:\00003601}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/fs\/themes\/cleanfs\/theme\.scss}line{font-family:\00003611}}
 #controlBox div.grip {
   background: #ccc;
   cursor: move;
   height: 12px;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/fs\/themes\/cleanfs\/theme\.scss}line{font-family:\00003607}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/fs\/themes\/cleanfs\/theme\.scss}line{font-family:\00003617}}
 #controlBox div.inner {
   padding: 5px 5px 4px 5px;
   white-space: nowrap;
   opacity: .2;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/fs\/themes\/cleanfs\/theme\.scss}line{font-family:\00003614}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/fs\/themes\/cleanfs\/theme\.scss}line{font-family:\00003624}}
 #controlBox.active div.inner {
   opacity: 1;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/fs\/themes\/cleanfs\/theme\.scss}line{font-family:\00003618}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/fs\/themes\/cleanfs\/theme\.scss}line{font-family:\00003628}}
 div#fineprint {
   border-top: 1px solid #d9d9d9;
   font-size: smaller;
@@ -733,7 +745,7 @@ div#fineprint {
   padding-top: 5px;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/fs\/themes\/cleanfs\/theme\.scss}line{font-family:\00003625}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/fs\/themes\/cleanfs\/theme\.scss}line{font-family:\00003635}}
 #taskdetails {
   margin: 10px 0px 10px 0px;
   padding: 10px;
@@ -741,38 +753,38 @@ div#fineprint {
   border: solid 1px #d9d9d9;
   border-radius: 3px;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/fs\/themes\/cleanfs\/theme\.scss}line{font-family:\00003628}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/fs\/themes\/cleanfs\/theme\.scss}line{font-family:\00003638}}
 #taskdetails #navigation {
   float: right;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/fs\/themes\/cleanfs\/theme\.scss}line{font-family:\00003632}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/fs\/themes\/cleanfs\/theme\.scss}line{font-family:\00003642}}
 #taskdetails form #taskfields {
   width: 335px;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/fs\/themes\/cleanfs\/theme\.scss}line{font-family:\00003636}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/fs\/themes\/cleanfs\/theme\.scss}line{font-family:\00003646}}
 #taskdetails #taskfields {
   width: 290px;
   float: left;
   border-right: 1px solid #d9d9d9;
   padding-top: 5px;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/fs\/themes\/cleanfs\/theme\.scss}line{font-family:\00003642}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/fs\/themes\/cleanfs\/theme\.scss}line{font-family:\00003652}}
 #taskdetails #taskfields table {
   width: 100%;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/fs\/themes\/cleanfs\/theme\.scss}line{font-family:\00003646}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/fs\/themes\/cleanfs\/theme\.scss}line{font-family:\00003656}}
 #taskdetails #taskfields td, #taskdetails #taskfields th {
   padding: 2px 2px;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/fs\/themes\/cleanfs\/theme\.scss}line{font-family:\00003650}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/fs\/themes\/cleanfs\/theme\.scss}line{font-family:\00003660}}
 #taskdetails #taskdetailsfull {
   margin-left: 300px;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/fs\/themes\/cleanfs\/theme\.scss}line{font-family:\00003653}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/fs\/themes\/cleanfs\/theme\.scss}line{font-family:\00003663}}
 #taskdetails form #taskdetailsfull {
   margin-left: 355px;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/fs\/themes\/cleanfs\/theme\.scss}line{font-family:\00003656}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/fs\/themes\/cleanfs\/theme\.scss}line{font-family:\00003666}}
 #taskdetails #taskinfo {
   margin-left: 300px;
   margin-top: 15px;
@@ -782,7 +794,7 @@ div#fineprint {
   padding: 8px 5px;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/fs\/themes\/cleanfs\/theme\.scss}line{font-family:\00003666}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/fs\/themes\/cleanfs\/theme\.scss}line{font-family:\00003676}}
 #comments, #related, #notify, #remind, #history {
   margin: 10px 0px 10px 0px;
   padding: 10px;
@@ -792,17 +804,17 @@ div#fineprint {
   /*margin-left: $twocol_content_margin;*/
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/fs\/themes\/cleanfs\/theme\.scss}line{font-family:\00003671}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/fs\/themes\/cleanfs\/theme\.scss}line{font-family:\00003681}}
 #content > #submenu {
   /*margin-left: $twocol_content_margin;*/
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/fs\/themes\/cleanfs\/theme\.scss}line{font-family:\00003675}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/fs\/themes\/cleanfs\/theme\.scss}line{font-family:\00003685}}
 #submenu {
   margin-bottom: 0;
   height: 25px;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/fs\/themes\/cleanfs\/theme\.scss}line{font-family:\00003679}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/fs\/themes\/cleanfs\/theme\.scss}line{font-family:\00003689}}
 #submenu a {
   border: 1px solid #cdcdcd;
   background: #d9d9d9;
@@ -819,11 +831,11 @@ div#fineprint {
   -moz-border-top-right-radius: 5px;
   -webkit-border-top-right-radius: 5px;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/fs\/themes\/cleanfs\/theme\.scss}line{font-family:\00003696}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/fs\/themes\/cleanfs\/theme\.scss}line{font-family:\00003706}}
 #submenu a:hover {
   background-color: #d6d8d9;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/fs\/themes\/cleanfs\/theme\.scss}line{font-family:\00003700}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/fs\/themes\/cleanfs\/theme\.scss}line{font-family:\00003710}}
 #submenu a.active {
   height: 26px;
   margin-top: 0;
@@ -835,30 +847,30 @@ div#fineprint {
   background-color: white;
   z-index: 5;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/fs\/themes\/cleanfs\/theme\.scss}line{font-family:\00003712}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/fs\/themes\/cleanfs\/theme\.scss}line{font-family:\00003722}}
 #submenu li {
   display: inline;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/fs\/themes\/cleanfs\/theme\.scss}line{font-family:\00003717}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/fs\/themes\/cleanfs\/theme\.scss}line{font-family:\00003727}}
 div.tab {
   margin: 10px 1ex 10px 0;
   padding: 1ex 1ex 0;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/fs\/themes\/cleanfs\/theme\.scss}line{font-family:\00003723}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/fs\/themes\/cleanfs\/theme\.scss}line{font-family:\00003733}}
 * html .tab div.clear {
   clear: none;
   height: 14em;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/fs\/themes\/cleanfs\/theme\.scss}line{font-family:\00003728}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/fs\/themes\/cleanfs\/theme\.scss}line{font-family:\00003738}}
 div.comment_container {
   padding-bottom: 5px;
   margin-bottom: 5px;
   border-bottom: 1px solid #d9d9d9;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/fs\/themes\/cleanfs\/theme\.scss}line{font-family:\00003733}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/fs\/themes\/cleanfs\/theme\.scss}line{font-family:\00003743}}
 div.comment_container em {
   display: block;
   float: left;
@@ -870,15 +882,15 @@ div.comment_container em {
   border-radius: 3px;
   background-color: #f2f2f2;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/fs\/themes\/cleanfs\/theme\.scss}line{font-family:\00003741}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/fs\/themes\/cleanfs\/theme\.scss}line{font-family:\00003751}}
 div.comment_container .commenttext {
   padding-top: 7px;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/fs\/themes\/cleanfs\/theme\.scss}line{font-family:\00003745}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/fs\/themes\/cleanfs\/theme\.scss}line{font-family:\00003755}}
 div.comment_container .comment {
   margin-left: 235px;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/fs\/themes\/cleanfs\/theme\.scss}line{font-family:\00003749}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/fs\/themes\/cleanfs\/theme\.scss}line{font-family:\00003759}}
 div.comment_container .attachments {
   margin: 10px 0px 10px 0px;
   padding: 10px;
@@ -891,12 +903,12 @@ div.comment_container .attachments {
   background-repeat: no-repeat;
   background-position: 340px 5px;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/fs\/themes\/cleanfs\/theme\.scss}line{font-family:\00003757}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/fs\/themes\/cleanfs\/theme\.scss}line{font-family:\00003767}}
 div.comment_container .attachments img {
   position: relative;
   top: 4px;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/fs\/themes\/cleanfs\/theme\.scss}line{font-family:\00003763}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/fs\/themes\/cleanfs\/theme\.scss}line{font-family:\00003773}}
 div.comment_container .commentlink {
   background-image: url(img/gray/comment_stroke_16x14.png);
   background-repeat: no-repeat;
@@ -906,17 +918,17 @@ div.comment_container .commentlink {
   width: 16px;
   margin: 2px 4px 0 2px;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/fs\/themes\/cleanfs\/theme\.scss}line{font-family:\00003773}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/fs\/themes\/cleanfs\/theme\.scss}line{font-family:\00003783}}
 div.comment_container .commentlink:hover {
   background-image: url(img/black/comment_stroke_16x14.png);
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/fs\/themes\/cleanfs\/theme\.scss}line{font-family:\00003778}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/fs\/themes\/cleanfs\/theme\.scss}line{font-family:\00003788}}
 textarea {
   width: 99%;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/fs\/themes\/cleanfs\/theme\.scss}line{font-family:\00003782}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/fs\/themes\/cleanfs\/theme\.scss}line{font-family:\00003792}}
 #events {
   margin: 10px 0px 10px 0px;
   padding: 10px;
@@ -925,16 +937,16 @@ textarea {
   border-radius: 3px;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/fs\/themes\/cleanfs\/theme\.scss}line{font-family:\00003787}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/fs\/themes\/cleanfs\/theme\.scss}line{font-family:\00003797}}
 table th {
   vertical-align: middle;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/fs\/themes\/cleanfs\/theme\.scss}line{font-family:\00003790}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/fs\/themes\/cleanfs\/theme\.scss}line{font-family:\00003800}}
 table td {
   vertical-align: top;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/fs\/themes\/cleanfs\/theme\.scss}line{font-family:\00003795}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/fs\/themes\/cleanfs\/theme\.scss}line{font-family:\00003805}}
 div.box, p.box, table.userlist {
   /*border:1px solid #ccc;*/
   /*background-color:#e6eef6;*/
@@ -948,27 +960,27 @@ div.box, p.box, table.userlist {
   border-radius: 3px;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/fs\/themes\/cleanfs\/theme\.scss}line{font-family:\00003805}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/fs\/themes\/cleanfs\/theme\.scss}line{font-family:\00003815}}
 table.userlist {
   border-collapse: collapse;
   width: 98%;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/fs\/themes\/cleanfs\/theme\.scss}line{font-family:\00003809}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/fs\/themes\/cleanfs\/theme\.scss}line{font-family:\00003819}}
 table.userlist td.imgcol {
   padding: 0 0.2em;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/fs\/themes\/cleanfs\/theme\.scss}line{font-family:\00003813}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/fs\/themes\/cleanfs\/theme\.scss}line{font-family:\00003823}}
 table.userlist td, table.userlist table.userlist th {
   border: 1px solid #ccc;
   padding: 0.1em 0.2em;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/fs\/themes\/cleanfs\/theme\.scss}line{font-family:\00003818}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/fs\/themes\/cleanfs\/theme\.scss}line{font-family:\00003828}}
 table.userlist th {
   border-bottom: solid 1px #a1a6a8;
   border-top: solid 1px #a1a6a8;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/fs\/themes\/cleanfs\/theme\.scss}line{font-family:\00003824}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/fs\/themes\/cleanfs\/theme\.scss}line{font-family:\00003834}}
 div.roadmap {
   margin: 10px 0px 10px 0px;
   padding: 10px;
@@ -977,7 +989,7 @@ div.roadmap {
   border-radius: 3px;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/fs\/themes\/cleanfs\/theme\.scss}line{font-family:\00003828}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/fs\/themes\/cleanfs\/theme\.scss}line{font-family:\00003838}}
 div.error, div.success, div.mixed {
   margin: 10px 0px 10px 0px;
   padding: 10px;
@@ -989,7 +1001,7 @@ div.error, div.success, div.mixed {
   color: white;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/fs\/themes\/cleanfs\/theme\.scss}line{font-family:\00003835}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/fs\/themes\/cleanfs\/theme\.scss}line{font-family:\00003845}}
 div.error {
   background: #ffe6e2 url(img/red/x_alt_24x24.png) no-repeat 9px 7px;
   border: solid 1px #962E21;
@@ -997,12 +1009,12 @@ div.error {
   color: #4b1710;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/fs\/themes\/cleanfs\/theme\.scss}line{font-family:\00003842}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/fs\/themes\/cleanfs\/theme\.scss}line{font-family:\00003852}}
 div.mixed {
   background: #ffcc00 url(frown.png) no-repeat 5px 1px;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/fs\/themes\/cleanfs\/theme\.scss}line{font-family:\00003846}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/fs\/themes\/cleanfs\/theme\.scss}line{font-family:\00003856}}
 div.success {
   background: #e8f9d4 url(img/green/check_24x20.png) no-repeat 10px 9px;
   border: solid 1px #53821F;
@@ -1010,40 +1022,40 @@ div.success {
   color: #24380d;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/fs\/themes\/cleanfs\/theme\.scss}line{font-family:\00003853}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/fs\/themes\/cleanfs\/theme\.scss}line{font-family:\00003863}}
 form#login {
   position: relative;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/fs\/themes\/cleanfs\/theme\.scss}line{font-family:\00003856}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/fs\/themes\/cleanfs\/theme\.scss}line{font-family:\00003866}}
 form#login #lbl_user_name, form#login #lbl_password {
   width: 90px;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/fs\/themes\/cleanfs\/theme\.scss}line{font-family:\00003860}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/fs\/themes\/cleanfs\/theme\.scss}line{font-family:\00003870}}
 form#login label {
   width: 50px;
   color: #dddddd;
   width: 100px;
   margin: 0 2px 0 20px;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/fs\/themes\/cleanfs\/theme\.scss}line{font-family:\00003867}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/fs\/themes\/cleanfs\/theme\.scss}line{font-family:\00003877}}
 form#login #links {
   position: absolute;
   top: 30px;
   left: 20px;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/fs\/themes\/cleanfs\/theme\.scss}line{font-family:\00003872}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/fs\/themes\/cleanfs\/theme\.scss}line{font-family:\00003882}}
 form#login #links a {
   color: #dddddd;
   padding: 3px 7px;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/fs\/themes\/cleanfs\/theme\.scss}line{font-family:\00003877}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/fs\/themes\/cleanfs\/theme\.scss}line{font-family:\00003887}}
 form#login #links a:hover {
   background: #494d4e;
   border-radius: 10px;
   -moz-border-radius: 10px;
   -webkit-border-radius: 10px;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/fs\/themes\/cleanfs\/theme\.scss}line{font-family:\00003882}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/fs\/themes\/cleanfs\/theme\.scss}line{font-family:\00003892}}
 form#login #links a.active {
   background: #dddddd;
   color: #3c4041;
@@ -1051,23 +1063,23 @@ form#login #links a.active {
   -moz-border-radius: 10px;
   -webkit-border-radius: 10px;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/fs\/themes\/cleanfs\/theme\.scss}line{font-family:\00003889}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/fs\/themes\/cleanfs\/theme\.scss}line{font-family:\00003899}}
 form#login .remember_me {
   position: absolute;
   top: 30px;
   right: 57px;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/fs\/themes\/cleanfs\/theme\.scss}line{font-family:\00003894}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/fs\/themes\/cleanfs\/theme\.scss}line{font-family:\00003904}}
 form#login .remember_me input {
   vertical-align: middle;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/fs\/themes\/cleanfs\/theme\.scss}line{font-family:\00003900}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/fs\/themes\/cleanfs\/theme\.scss}line{font-family:\00003910}}
 span#advancedsearchstate img {
   vertical-align: middle;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/fs\/themes\/cleanfs\/theme\.scss}line{font-family:\00003904}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/fs\/themes\/cleanfs\/theme\.scss}line{font-family:\00003914}}
 fieldset {
   margin: 10px 0px 10px 0px;
   padding: 10px;
@@ -1076,7 +1088,7 @@ fieldset {
   border-radius: 3px;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/fs\/themes\/cleanfs\/theme\.scss}line{font-family:\00003908}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/fs\/themes\/cleanfs\/theme\.scss}line{font-family:\00003918}}
 #content > fieldset legend {
   color: #3c4041;
   background: #ededed;
@@ -1088,31 +1100,31 @@ fieldset {
   -webkit-border-radius: 10px;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/fs\/themes\/cleanfs\/theme\.scss}line{font-family:\00003917}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/fs\/themes\/cleanfs\/theme\.scss}line{font-family:\00003927}}
 #content > h3 {
   margin-top: 1em;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/fs\/themes\/cleanfs\/theme\.scss}line{font-family:\00003921}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/fs\/themes\/cleanfs\/theme\.scss}line{font-family:\00003931}}
 thead th {
   border-bottom: solid 1px #a1a6a8;
   border-top: solid 1px #a1a6a8;
   background: none;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/fs\/themes\/cleanfs\/theme\.scss}line{font-family:\00003928}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/fs\/themes\/cleanfs\/theme\.scss}line{font-family:\00003938}}
 div#taskinfo {
   /*width:98%;*/
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/fs\/themes\/cleanfs\/theme\.scss}line{font-family:\00003932}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/fs\/themes\/cleanfs\/theme\.scss}line{font-family:\00003942}}
 div#taskstatus {
   border-bottom: 1px solid #ccc;
   padding: 4px;
   margin-bottom: 5px;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/fs\/themes\/cleanfs\/theme\.scss}line{font-family:\00003938}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/fs\/themes\/cleanfs\/theme\.scss}line{font-family:\00003948}}
 div#taskclosed {
   padding: 5px;
   margin: 5px 5px 10px;
@@ -1122,20 +1134,20 @@ div#taskclosed {
   border: solid 1px red;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/fs\/themes\/cleanfs\/theme\.scss}line{font-family:\00003947}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/fs\/themes\/cleanfs\/theme\.scss}line{font-family:\00003957}}
 div#taskdeps {
   float: left;
   width: 50%;
   margin-bottom: 8px;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/fs\/themes\/cleanfs\/theme\.scss}line{font-family:\00003953}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/fs\/themes\/cleanfs\/theme\.scss}line{font-family:\00003963}}
 div#taskblocks {
   float: left;
   width: 45%;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/fs\/themes\/cleanfs\/theme\.scss}line{font-family:\00003958}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/fs\/themes\/cleanfs\/theme\.scss}line{font-family:\00003968}}
 a.datelink {
   background-image: url(img/black/calendar_alt_fill_16x16.png);
   background-repeat: no-repeat;
@@ -1151,14 +1163,14 @@ a.datelink {
   vertical-align: middle;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/fs\/themes\/cleanfs\/theme\.scss}line{font-family:\00003967}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/fs\/themes\/cleanfs\/theme\.scss}line{font-family:\00003977}}
 hr {
   /*color: $box_border;*/
   border: none;
   border-top: 1px solid #d9d9d9;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/fs\/themes\/cleanfs\/theme\.scss}line{font-family:\00003974}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/fs\/themes\/cleanfs\/theme\.scss}line{font-family:\00003984}}
 div#permissions {
   width: 22em;
   visibility: hidden;
@@ -1170,82 +1182,82 @@ div#permissions {
   z-index: 5;
   padding: 5px;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/fs\/themes\/cleanfs\/theme\.scss}line{font-family:\00003985}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/fs\/themes\/cleanfs\/theme\.scss}line{font-family:\00003995}}
 div#permissions td, div#permissions th {
   padding: 2px 5px;
   border: 0;
   text-align: left;
   font-weight: 400;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/fs\/themes\/cleanfs\/theme\.scss}line{font-family:\00003993}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/fs\/themes\/cleanfs\/theme\.scss}line{font-family:\000031003}}
 div#permissions table {
   color: #000;
   background: #fff;
   border: 1px dotted #000;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/fs\/themes\/cleanfs\/theme\.scss}line{font-family:\00003999}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/fs\/themes\/cleanfs\/theme\.scss}line{font-family:\000031009}}
 div#permissions table thead th {
   font-weight: 700;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/fs\/themes\/cleanfs\/theme\.scss}line{font-family:\000031003}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/fs\/themes\/cleanfs\/theme\.scss}line{font-family:\000031013}}
 div#permissions td.good, div#permissions table td.bad {
   text-align: right;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/fs\/themes\/cleanfs\/theme\.scss}line{font-family:\000031010}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/fs\/themes\/cleanfs\/theme\.scss}line{font-family:\000031020}}
 fieldset.advsearch_misc input {
   vertical-align: middle;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/fs\/themes\/cleanfs\/theme\.scss}line{font-family:\000031013}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/fs\/themes\/cleanfs\/theme\.scss}line{font-family:\000031023}}
 fieldset.advsearch_misc label {
   margin-right: 10px;
   white-space: nowrap;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/fs\/themes\/cleanfs\/theme\.scss}line{font-family:\000031020}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/fs\/themes\/cleanfs\/theme\.scss}line{font-family:\000031030}}
 fieldset.advsearch_dates label {
   margin: 0 5px;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/fs\/themes\/cleanfs\/theme\.scss}line{font-family:\000031025}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/fs\/themes\/cleanfs\/theme\.scss}line{font-family:\000031035}}
 .search_select {
   float: left;
   position: relative;
   margin-right: 10px;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/fs\/themes\/cleanfs\/theme\.scss}line{font-family:\000031030}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/fs\/themes\/cleanfs\/theme\.scss}line{font-family:\000031040}}
 .search_select .multisel {
   position: absolute;
   white-space: nowrap;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/fs\/themes\/cleanfs\/theme\.scss}line{font-family:\000031035}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/fs\/themes\/cleanfs\/theme\.scss}line{font-family:\000031045}}
 .search_select select {
   margin-top: 1.3em;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/fs\/themes\/cleanfs\/theme\.scss}line{font-family:\000031041}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/fs\/themes\/cleanfs\/theme\.scss}line{font-family:\000031051}}
 fieldset.advsearch_users .multisel {
   position: absolute;
   white-space: nowrap;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/fs\/themes\/cleanfs\/theme\.scss}line{font-family:\000031046}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/fs\/themes\/cleanfs\/theme\.scss}line{font-family:\000031056}}
 fieldset.advsearch_users input {
   margin-top: 1.3em;
 }
 
 /* --------------------------- FORMS -----------------------*/
-@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/fs\/themes\/cleanfs\/theme\.scss}line{font-family:\000031052}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/fs\/themes\/cleanfs\/theme\.scss}line{font-family:\000031062}}
 ul.form_elements {
   list-style: none;
   padding: 0;
   margin: 0 0 0 1em;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/fs\/themes\/cleanfs\/theme\.scss}line{font-family:\000031057}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/fs\/themes\/cleanfs\/theme\.scss}line{font-family:\000031067}}
 ul.form_elements li {
   padding: 2px;
   margin-bottom: 9px;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/fs\/themes\/cleanfs\/theme\.scss}line{font-family:\000031061}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/fs\/themes\/cleanfs\/theme\.scss}line{font-family:\000031071}}
 ul.form_elements li label {
   width: 200px;
   display: -moz-inline-stack;
@@ -1257,46 +1269,46 @@ ul.form_elements li label {
   /* target IE7 only */
   vertical-align: top;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/fs\/themes\/cleanfs\/theme\.scss}line{font-family:\000031067}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/fs\/themes\/cleanfs\/theme\.scss}line{font-family:\000031077}}
 ul.form_elements li label.inline {
   display: inline;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/fs\/themes\/cleanfs\/theme\.scss}line{font-family:\000031071}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/fs\/themes\/cleanfs\/theme\.scss}line{font-family:\000031081}}
 ul.form_elements li input {
   vertical-align: middle;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/fs\/themes\/cleanfs\/theme\.scss}line{font-family:\000031075}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/fs\/themes\/cleanfs\/theme\.scss}line{font-family:\000031085}}
 ul.form_elements li textarea {
   width: 30em;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/fs\/themes\/cleanfs\/theme\.scss}line{font-family:\000031081}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/fs\/themes\/cleanfs\/theme\.scss}line{font-family:\000031091}}
 ul.form_elements li.required label {
   font-weight: bold;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/fs\/themes\/cleanfs\/theme\.scss}line{font-family:\000031086}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/fs\/themes\/cleanfs\/theme\.scss}line{font-family:\000031096}}
 ul.form_elements li:hover label {
   text-decoration: underline;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/fs\/themes\/cleanfs\/theme\.scss}line{font-family:\000031090}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/fs\/themes\/cleanfs\/theme\.scss}line{font-family:\000031100}}
 ul.form_elements span.note {
   margin-left: 205px;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/fs\/themes\/cleanfs\/theme\.scss}line{font-family:\000031097}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/fs\/themes\/cleanfs\/theme\.scss}line{font-family:\000031107}}
 ul.wide li label {
   width: 250px;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/fs\/themes\/cleanfs\/theme\.scss}line{font-family:\000031103}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/fs\/themes\/cleanfs\/theme\.scss}line{font-family:\000031113}}
 ul.slim {
   width: 390px;
   margin: 0;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/fs\/themes\/cleanfs\/theme\.scss}line{font-family:\000031108}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/fs\/themes\/cleanfs\/theme\.scss}line{font-family:\000031118}}
 ul.slim li label {
   width: 110px;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/fs\/themes\/cleanfs\/theme\.scss}line{font-family:\000031112}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/fs\/themes\/cleanfs\/theme\.scss}line{font-family:\000031122}}
 ul.slim li div.userSelectWidget {
   display: -moz-inline-stack;
   /* optional */
@@ -1307,18 +1319,18 @@ ul.slim li div.userSelectWidget {
   /* target IE7 only */
   vertical-align: middle;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/fs\/themes\/cleanfs\/theme\.scss}line{font-family:\000031116}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/fs\/themes\/cleanfs\/theme\.scss}line{font-family:\000031126}}
 ul.slim li div.userSelectWidget input {
   width: 120px;
 }
 
 /* fancy dual selects */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/fs\/themes\/cleanfs\/theme\.scss}line{font-family:\000031124}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/fs\/themes\/cleanfs\/theme\.scss}line{font-family:\000031134}}
 .double_select {
   width: 350px;
   position: relative;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/fs\/themes\/cleanfs\/theme\.scss}line{font-family:\000031128}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/fs\/themes\/cleanfs\/theme\.scss}line{font-family:\000031138}}
 .double_select .dualselect_selectable {
   height: 220px;
   width: 40%;
@@ -1331,7 +1343,7 @@ ul.slim li div.userSelectWidget input {
   /* target IE7 only */
   vertical-align: middle;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/fs\/themes\/cleanfs\/theme\.scss}line{font-family:\000031135}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/fs\/themes\/cleanfs\/theme\.scss}line{font-family:\000031145}}
 .double_select .dualselect_buttons {
   width: 16%;
   display: -moz-inline-stack;
@@ -1343,12 +1355,12 @@ ul.slim li div.userSelectWidget input {
   /* target IE7 only */
   vertical-align: middle;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/fs\/themes\/cleanfs\/theme\.scss}line{font-family:\000031140}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/fs\/themes\/cleanfs\/theme\.scss}line{font-family:\000031150}}
 .double_select .dualselect_buttons button {
   width: 100%;
   padding: 3px;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/fs\/themes\/cleanfs\/theme\.scss}line{font-family:\000031146}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/fs\/themes\/cleanfs\/theme\.scss}line{font-family:\000031156}}
 .double_select .dualselect_selected {
   height: 220px;
   /*min-width: 12em;*/
@@ -1362,12 +1374,12 @@ ul.slim li div.userSelectWidget input {
   vertical-align: middle;
   width: 40%;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/fs\/themes\/cleanfs\/theme\.scss}line{font-family:\000031153}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/fs\/themes\/cleanfs\/theme\.scss}line{font-family:\000031163}}
 .double_select .dualselect_selected select {
   width: 100%;
   height: 80%;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/fs\/themes\/cleanfs\/theme\.scss}line{font-family:\000031158}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/fs\/themes\/cleanfs\/theme\.scss}line{font-family:\000031168}}
 .double_select .dualselect_selected button {
   height: 10%;
   width: 100%;
