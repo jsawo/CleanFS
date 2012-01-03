@@ -100,22 +100,19 @@
             {!tpl_options(array('index' => L('tasklist'), 'toplevel' => L('toplevel'), 'roadmap' => L('roadmap')), Post::val('default_entry', $proj->prefs['default_entry']))}
           </select>
         </li>
-      </ul>
   
-      <fieldset><legend>{L('visiblecolumns')}</legend>
-        <ul class="form_elements">
-          <li>
-            <?php // Set the selectable column names
-            $columnnames = array('id', 'tasktype', 'category', 'severity',
-            'priority', 'summary', 'dateopened', 'status', 'openedby', 'private',
-            'assignedto', 'lastedit', 'reportedin', 'dueversion', 'duedate',
-            'comments', 'attachments', 'progress', 'dateclosed', 'os', 'votes');
-            $selectedcolumns = explode(' ', Post::val('visible_columns', $proj->prefs['visible_columns']));
-            ?>
-            {!tpl_double_select('visible_columns', $columnnames, $selectedcolumns, true)}
-          </li>
-        </ul>
-      </fieldset>
+        <li>
+          <label>{L('visiblecolumns')}</label>
+          <?php // Set the selectable column names
+          $columnnames = array('id', 'tasktype', 'category', 'severity',
+          'priority', 'summary', 'dateopened', 'status', 'openedby', 'private',
+          'assignedto', 'lastedit', 'reportedin', 'dueversion', 'duedate',
+          'comments', 'attachments', 'progress', 'dateclosed', 'os', 'votes');
+          $selectedcolumns = explode(' ', Post::val('visible_columns', $proj->prefs['visible_columns']));
+          ?>
+          {!tpl_double_select('visible_columns', $columnnames, $selectedcolumns, true)}
+        </li>
+      </ul>
     </div>
 
     <div id="notifications" class="tab">

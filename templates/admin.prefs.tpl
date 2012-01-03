@@ -150,11 +150,9 @@
             {!tpl_options(Flyspray::listThemes(), $fs->prefs['global_theme'], true)}
           </select>
         </li>
-      </ul>
   
-      <fieldset><legend>{L('visiblecolumns')}</legend>
-        <ul class="form_elements">
           <li>
+            <label>{L('visiblecolumns')}</label>
             <!--<label id="viscollabel">{L('visiblecolumns')}</label>-->
             <?php // Set the selectable column names
             $columnnames = array('id', 'project', 'tasktype', 'category', 'severity',
@@ -166,7 +164,6 @@
             {!tpl_double_select('visible_columns', $columnnames, $selectedcolumns, true)}
           </li>
         </ul>
-    </div>
 
     <div class="tbuttons">
       <input type="hidden" name="action" value="globaloptions" />

@@ -1,6 +1,3 @@
-<fieldset class="box">
-<legend>{L('registernewuser')}</legend>
-
 <form action="<?php if ($do == 'admin'): ?>{CreateURL($do, 'newuser')}<?php else: ?>{$_SERVER['SCRIPT_NAME']}<?php endif; ?>" method="post" id="registernewuser">
   <ul class="form_elements">
     <li class="required">
@@ -74,4 +71,3 @@
   </ul>
   <p><button type="submit" id="buSubmit">{L('registeraccount')}</button></p>
 </form>
-</fieldset>

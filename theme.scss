@@ -539,6 +539,7 @@ div#toolbox {
 	margin-left: 120px;
 	min-height: 450px;
 	height:1%;  /* Fix for IE bug */
+  padding: 20px;
   
   div.tab{
     @include bodyblock;

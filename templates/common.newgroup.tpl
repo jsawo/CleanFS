@@ -1,5 +1,3 @@
-<fieldset><legend>{L('createnewgroup')}</legend>
-
 <form action="{CreateUrl($do, 'newgroup', $proj->id)}" method="post" id="newgroup">
     
     <ul class="form_elements">
@@ -138,4 +136,3 @@
       <button type="submit">{L('addthisgroup')}</button>
     
 </form>
-</fieldset>
