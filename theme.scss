@@ -536,23 +536,14 @@ tr.severity5:hover td{background-color: darken($severity5, 5%) !important;}
 
 div#toolbox {
   @include bodyblock;
-	margin-left:120px;
-	min-height:375px;
+	margin-left: 120px;
+	min-height: 450px;
 	height:1%;  /* Fix for IE bug */
-  
-  /*form{*/
-  /*  @include bodyblock;*/
-  /*  margin-top: 10px;*/
-  /*}*/
   
   div.tab{
     @include bodyblock;
   }
-  
-  #submenu{
-    /*margin-top: -46px;*/
-  }
-  
+    
   h3{
     margin-bottom: 1em;
   }
@@ -567,9 +558,9 @@ div#toolboxmenu {
     display:block;
     border:1px solid darken($box_border, 5%);
     /*border-right: none; */
-    padding: 1em 0 1em 0px;
+    padding: 1em 5px;
     margin-left: 10px;
-    width:110px;
+    width:100px;
     text-align:center;
     background: darken($far_background, 8%);
     color: $top1;
@@ -589,7 +580,8 @@ div#toolboxmenu {
   a.active{
     margin-left: 0;
     font-weight: bold;
-    width: 120px;
+    width: 100px;
+    padding: 1em 10px;
     background-color: $near_background;
     color: $top1;
     border:1px solid $box_border;
