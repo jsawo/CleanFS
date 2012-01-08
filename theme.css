@@ -1283,7 +1283,7 @@ ul.form_elements li.required label {
 }
 @media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/fs\/themes\/cleanfs\/theme\.scss}line{font-family:\000031091}}
 ul.form_elements li:hover label {
-  text-decoration: underline;
+  /*text-decoration: underline;*/
 }
 @media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/fs\/themes\/cleanfs\/theme\.scss}line{font-family:\000031095}}
 ul.form_elements span.note {
