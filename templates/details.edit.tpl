@@ -1,12 +1,6 @@
 <div id="taskdetails">
   <form action="{CreateUrl('details', $task_details['task_id'])}" id="taskeditform" enctype="multipart/form-data" method="post">
 	 <div>
-		<h2 class="summary severity{Req::val('task_severity', $task_details['task_severity'])}">
-		  <a href="{CreateUrl('details', $task_details['task_id'])}">FS#{$task_details['task_id']}</a> -
-		  <input class="text severity{Req::val('task_severity', $task_details['task_severity'])}" type="text"
-			name="item_summary" size="80" maxlength="100"
-			value="{Req::val('item_summary', $task_details['item_summary'])}" />
-		</h2>
 		<input type="hidden" name="action" value="details.update" />
         <input type="hidden" name="edit" value="1" />
 		<input type="hidden" name="task_id" value="{$task_details['task_id']}" />
@@ -120,47 +114,32 @@
 
 		<div id="fineprint">
 		  {L('openedby')} {!tpl_userlink($task_details['opened_by'])}
-		  - {!formatDate($task_details['date_opened'], true)}
+		  - <span title="{!formatDate($task_details['date_opened'], true)}">{!formatDate($task_details['date_opened'], false)}</span>
 		  <?php if ($task_details['last_edited_by']): ?>
 		  <br />
 		  {L('editedby')}  {!tpl_userlink($task_details['last_edited_by'])}
-		  - {formatDate($task_details['last_edited_time'], true)}
+		  - <span title="{formatDate($task_details['last_edited_time'], true)}">{formatDate($task_details['last_edited_time'], false)}</span>
 		  <?php endif; ?>
 		</div>
 
 		</div>
 
 		<div id="taskdetailsfull">
-          <h3 class="taskdesc">{L('details')}</h3>
-        <?php $attachments = $proj->listTaskAttachments($task_details['task_id']);
-          $this->display('common.editattachments.tpl', 'attachments', $attachments); ?>
 
-          <?php if ($user->perms('create_attachments')): ?>
-          <div id="uploadfilebox">
-            <span style="display: none"><?php // this span is shown/copied in javascript when adding files ?>
-              <input tabindex="5" class="file" type="file" size="55" name="usertaskfile[]" />
-                <a href="javascript://" tabindex="6" onclick="removeUploadField(this);">{L('remove')}</a><br />
-            </span>
-            <noscript>
-                <span>
-                  <input tabindex="5" class="file" type="file" size="55" name="usertaskfile[]" />
-                    <a href="javascript://" tabindex="6" onclick="removeUploadField(this);">{L('remove')}</a><br />
-                </span>
-            </noscript>
-          </div>
-          <button id="uploadfilebox_attachafile" tabindex="7" type="button" onclick="addUploadFields()">
-            {L('uploadafile')} ({L('max')} {$fs->max_file_size} {L('MiB')})
-          </button>
-          <button id="uploadfilebox_attachanotherfile" tabindex="7" style="display: none" type="button" onclick="addUploadFields()">
-             {L('attachanotherfile')} ({L('max')} {$fs->max_file_size} {L('MiB')})
-          </button>
-          <?php endif; ?>
+				<h2 class="summary severity{Req::val('task_severity', $task_details['task_severity'])}">
+					<a href="{CreateUrl('details', $task_details['task_id'])}">FS#{$task_details['task_id']}</a> -
+					<input class="text severity{Req::val('task_severity', $task_details['task_severity'])}" type="text"
+					name="item_summary" size="80" maxlength="100"
+					value="{Req::val('item_summary', $task_details['item_summary'])}" />
+				</h2>
+
+          <!--<h3 class="taskdesc">{L('details')}</h3>-->
           <?php if (defined('FLYSPRAY_HAS_PREVIEW')): ?>
-          <div class="hide preview" id="preview"></div>
+						<div class="hide preview" id="preview"></div>
           <?php endif; ?>
           {!TextFormatter::textarea('detailed_desc', 15, 70, array('id' => 'details'), Req::val('detailed_desc', $task_details['detailed_desc']))}
           <br />
-          <?php if ($user->perms('add_comments') && (!$task_details['is_closed'] || $proj->prefs['comment_closed'])): ?>
+          <?php if ($user->perms('add_comments') && (!$task_details['is_closed'] || $proj->prefs['comment_closed'])): ?><!--
               <button type="button" onclick="showstuff('edit_add_comment');this.style.display='none';">{L('addcomment')}</button>
               <div id="edit_add_comment" class="hide">
               <label for="comment_text">{L('comment')}</label>
@@ -181,7 +160,7 @@
               <?php endif; ?>
 
               <textarea accesskey="r" tabindex="8" id="comment_text" name="comment_text" cols="50" rows="10"></textarea>
-              </div>
+              </div>-->
           <?php endif; ?>
 		  <p class="buttons">
               <button type="submit" accesskey="s" onclick="return checkok('{#$baseurl}javascript/callbacks/checksave.php?time={time()}&amp;taskid={$task_details['task_id']}', '{#L('alreadyedited')}', 'taskeditform')">{L('savedetails')}</button>
@@ -189,10 +168,34 @@
               <button tabindex="9" type="button" onclick="showPreview('details', '{#$baseurl}', 'preview')">{L('preview')}</button>
               <?php endif; ?>
               <button type="reset">{L('reset')}</button>
-          </p>
-		</div>
+      </p>
 
-	 </div>
-     <div class="clear"></div>
+					<?php $attachments = $proj->listTaskAttachments($task_details['task_id']);
+	          $this->display('common.editattachments.tpl', 'attachments', $attachments); ?>
+
+          <?php if ($user->perms('create_attachments')): ?>
+						<div id="uploadfilebox">
+							<span style="display: none"><?php // this span is shown/copied in javascript when adding files ?>
+								<input tabindex="5" class="file" type="file" size="55" name="usertaskfile[]" />
+									<a href="javascript://" tabindex="6" onclick="removeUploadField(this);">{L('remove')}</a><br />
+							</span>
+							<noscript>
+									<span>
+										<input tabindex="5" class="file" type="file" size="55" name="usertaskfile[]" />
+											<a href="javascript://" tabindex="6" onclick="removeUploadField(this);">{L('remove')}</a><br />
+									</span>
+							</noscript>
+						</div>
+						<button id="uploadfilebox_attachafile" tabindex="7" type="button" onclick="addUploadFields()">
+							{L('uploadafile')} ({L('max')} {$fs->max_file_size} {L('MiB')})
+						</button>
+						<button id="uploadfilebox_attachanotherfile" tabindex="7" style="display: none" type="button" onclick="addUploadFields()">
+							 {L('attachanotherfile')} ({L('max')} {$fs->max_file_size} {L('MiB')})
+						</button>
+          <?php endif; ?>
+
+			</div>
+		</div>
+    <div class="clear"></div>
   </form>
 </div>

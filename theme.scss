@@ -7,7 +7,8 @@
 
 /* ----------------- VARIABLES --------------------- */
   /*$far_background: #dcdcdc;*/
-  $far_background: #ededed;
+  /*$far_background: #ededed;*/
+  $far_background: #f9f9f9;
   $near_background: #fff;
   /*$top1: lighten(#292626, 2%);*/
   $top1: lighten(#353839, 3%);
@@ -21,12 +22,14 @@
   
   $blue: #0066CC;
   
+  $text: #222222;
   /*$link: #0066CC;*/
   $link: $dominant;
   $inverse_link: #ddd;
 
   $inverse_border: #888;
   $box_border: darken(#E1E1E1, 3%);
+  $box_border: darken(#E1E1E1, 0%);
 
   
   $severity1: #fff;
@@ -76,10 +79,10 @@
 	*display: inline;  /* target IE7 only */
 }
 
-@mixin box-shadow($color: #333333) {
-  -moz-box-shadow: 0px 1px 2px $color;
-  -webkit-box-shadow: 0px 1px 2px $color;
-  box-shadow: 0px 1px 2px $color;
+@mixin box-shadow($color: #333333, $strength: 2px) {
+  -moz-box-shadow: 0px 1px $strength $color;
+  -webkit-box-shadow: 0px 1px $strength $color;
+  box-shadow: 0px 1px $strength $color;
   -ms-filter: "progid:DXImageTransform.Microsoft.Shadow(Strength=4, Direction=90, Color='$color')";
   filter: progid:DXImageTransform.Microsoft.Shadow(Strength=4, Direction=90, Color='$color');
 }
@@ -373,8 +376,108 @@ div#mysearches {
 .active#roadmaplink  {background-image: url("img/white/compass_12x12.png");}
 .active#projectslink {background-image: url("img/white/cog_alt_12x12.png");}
 
+/* --- buttons --- */
+
+#actionbar{
+  /*height: 4em;*/
+  position: relative;
+  
+  a.button{
+    margin-bottom: 0;
+  }
+}
+
+a#closetask, a#reqclose{
+  float: right;
+}
+
+
+a.button{
+  /*display:block;*/
+  /*float:left;*/
+  @include inline-block;
+  /*margin: 0.7em 0.5em 0.7em 0;*/
+  margin: 0.3em 0.3em 0.3em 0;
+  padding:8px 13px 8px 10px;   /* Links */
+  
+  border:1px solid $box_border;
+  border-top:1px solid lighten($box_border, 5%);
+  border-left:1px solid lighten($box_border, 5%);
+  
+  @include rounded-corners(4px);
+  @include box-shadow(#ddd, 1px);
+
+  background-color: $near_background;
+  font-family:"Lucida Grande", Tahoma, Arial, Verdana, sans-serif;
+  font-size:100%;
+  line-height:130%;
+  text-decoration:none;
+  font-weight:bold;
+  color:#565656;
+  cursor:pointer;
+  
+  img{
+    margin:0 3px -3px 0 !important;
+    padding:0;
+    border:none;
+    width:16px;
+    height:16px;
+    float:none;
+  }
+}
+
+a.button:hover{
+  background-color: lighten($near_background, 5%);
+  border:1px solid darken($box_border, 25%);
+  /*color: darken($box_border, 5%);*/
+}
+
+a.button:active{
+  background-color:#6299c5;
+  border:1px solid #6299c5;
+  color:#fff;
+}
+
+body .positive {
+  color:#529214;
+}
+
+a.positive:hover {
+  background-color:#E6EFC2;
+  border:1px solid #C6D880;
+  color:#529214;
+}
+
+a.positive:active {
+  background-color:#529214;
+  border:1px solid #529214;
+  color:#fff;
+}
+
+body .negative {
+  color:#d12f19;
+}
+
+a.negative:hover {
+  background-color:#fbe3e4;
+  border:1px solid #fbc2c4;
+  color:#d12f19;
+}
+
+a.negative:active {
+  background-color:#d12f19;
+  border:1px solid #d12f19;
+  color:#fff;
+}
+
+
+
 #intromessage{
   display: block;
+}
+
+body.details #intromessage{
+  display: none;
 }
 
 #tasklist{
@@ -625,6 +728,7 @@ div#fineprint {
   font-size: smaller;
   margin: 5px 0;
   padding-top: 5px;
+  color: lighten($text, 20%);
 }
 
 #taskdetails{
@@ -644,16 +748,32 @@ div#fineprint {
     border-right: 1px solid $box_border;
     padding-top: 5px;
     
-    table{
-      width: 100%;
-    }
-    
-    td, th{
-      padding: 2px 2px;
+    ul.fieldslist{
+      margin-bottom: 35px;
+      list-style: none;
+      
+      li{
+        clear: both;
+        padding-top: 4%;
+        
+        .label{
+          display: block;
+          float: left;
+          width: 45%;
+          text-align: right;
+          color: lighten($text, 40%);
+        }
+        .value{
+          display: block;
+          float: right;
+          width: 50%;          
+        }
+      }
     }
   }
   #taskdetailsfull{
     margin-left: $twocol_content_margin;
+    padding: 2em 3em;
   } 
   form #taskdetailsfull{
     margin-left: 355px;
@@ -1171,6 +1291,12 @@ ul.slim{
 a#closetask{
   
 }
+
 div#closeform{
-  
+  @include rounded-corners;
+  @include box-shadow(#ddd, 1px);
+  padding: 2em;
+  position: absolute;
+  right: 5px;
+  top: 3em;
 }
