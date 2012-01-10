@@ -21,7 +21,7 @@
 	<?php else:  //if task is open  ?>
 
 		<?php if ($user->can_close_task($task_details) && !$d_open): ?>
-			<a href="{CreateUrl('details', $task_details['task_id'], null, array('showclose' => !Req::val('showclose')))}" id="closetask" class="button" accesskey="y" onclick="showhidestuff('closeform');return false;"> {L('closetask')}</a>
+			<a href="{CreateUrl('details', $task_details['task_id'], null, array('showclose' => !Req::val('showclose')))}" id="closetask" class="button main" accesskey="y" onclick="showhidestuff('closeform');return false;"> {L('closetask')}</a>
 							<div id="closeform" class="<?php if (Req::val('action') != 'details.close' && !Req::val('showclose')): ?>hide <?php endif; ?>popup">
 								<form action="{CreateUrl('details', $task_details['task_id'])}" method="post" id="formclosetask">
 									<div>
@@ -42,7 +42,7 @@
 							</div>
 
 		<?php elseif (!$d_open && !$user->isAnon() && !Flyspray::AdminRequestCheck(1, $task_details['task_id'])): ?>
-			<a href="#close" id="reqclose" class="button" onclick="showhidestuff('closeform');">{L('requestclose')}</a>
+			<a href="#close" id="reqclose" class="button main" onclick="showhidestuff('closeform');">{L('requestclose')}</a>
 							<div id="closeform" class="popup hide">
 								<form name="form3" action="{CreateUrl('details', $task_details['task_id'])}" method="post" id="formclosetask">
 									<div>
@@ -71,22 +71,22 @@
 	<?php endif; ?>
 </div>
 
-<div id="taskdetails">
-<span id="navigation"> <?php if ($prev_id): ?>
-  {!tpl_tasklink($prev_id, L('previoustask'), false, array('id'=>'prev', 'accesskey' => 'p'))}
-  <?php endif; ?>
-  <?php if ($prev_id): ?> | <?php endif; ?>
-  <?php $params = $_GET; unset($params['do'], $params['action'], $params['task_id'], $params['switch'], $params['project']); ?>
-  <a href="{CreateUrl('project', $proj->id, null, array('do' => 'index') + $params)}">{L('tasklist')}</a>
-  <?php if ($next_id): ?> | <?php endif; ?>
-  <?php if ($next_id): ?>
-  {!tpl_tasklink($next_id, L('nexttask'), false, array('id'=>'next', 'accesskey' => 'n'))}
-  <?php endif; ?>
-</span>
 
+
+<div id="taskdetails">
+	<span id="navigation"> <?php if ($prev_id): ?>
+		{!tpl_tasklink($prev_id, L('previoustask'), false, array('id'=>'prev', 'accesskey' => 'p'))}
+		<?php endif; ?>
+		<?php if ($prev_id): ?> | <?php endif; ?>
+		<?php $params = $_GET; unset($params['do'], $params['action'], $params['task_id'], $params['switch'], $params['project']); ?>
+		<a href="{CreateUrl('project', $proj->id, null, array('do' => 'index') + $params)}">{L('tasklist')}</a>
+		<?php if ($next_id): ?> | <?php endif; ?>
+		<?php if ($next_id): ?>
+		{!tpl_tasklink($next_id, L('nexttask'), false, array('id'=>'next', 'accesskey' => 'n'))}
+		<?php endif; ?>
+	</span>
 
   <div id="taskfields">
-
 	 <ul class="fieldslist">
 		<li>
 			<span class="label">{L('tasktype')}</span>

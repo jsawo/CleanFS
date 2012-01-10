@@ -385,14 +385,17 @@ div#mysearches {
   a.button{
     margin-bottom: 0;
   }
+
+  button.button{
+    margin-bottom: 0;
+  }
+  
+  .main{
+    float: right;
+  }
 }
 
-a#closetask, a#reqclose{
-  float: right;
-}
-
-
-a.button{
+a.button, button.button{
   /*display:block;*/
   /*float:left;*/
   @include inline-block;
@@ -426,13 +429,13 @@ a.button{
   }
 }
 
-a.button:hover{
+a.button:hover, button.button:hover{
   background-color: lighten($near_background, 5%);
   border:1px solid darken($box_border, 25%);
   /*color: darken($box_border, 5%);*/
 }
 
-a.button:active{
+a.button:active, button.button:active{
   background-color:#6299c5;
   border:1px solid #6299c5;
   color:#fff;
@@ -724,11 +727,20 @@ div#toolboxmenu {
 }
 
 div#fineprint {
-  border-top: 1px solid $box_border;
+  /*border-top: 1px solid $box_border;*/
   font-size: smaller;
   margin: 5px 0;
-  padding-top: 5px;
+  padding: 10px 5px 10px 20px;
   color: lighten($text, 20%);
+}
+
+form #taskdetails{
+  #taskfields{
+    width: 335px;
+  }
+  #taskdetailsfull{
+    margin-left: 355px;
+  } 
 }
 
 #taskdetails{
@@ -738,15 +750,14 @@ div#fineprint {
     float: right;
   }
   
-  form #taskfields{
-    width: 335px;
-  }
   
   #taskfields{
     width: 290px;
     float: left;
-    border-right: 1px solid $box_border;
+    border-right: 1px solid lighten($box_border, 5%);
     padding-top: 5px;
+    background: $far_background;
+    margin: -10px;
     
     ul.fieldslist{
       margin-bottom: 35px;
@@ -774,9 +785,6 @@ div#fineprint {
   #taskdetailsfull{
     margin-left: $twocol_content_margin;
     padding: 2em 3em;
-  } 
-  form #taskdetailsfull{
-    margin-left: 355px;
   } 
   #taskinfo{
     margin-left: $twocol_content_margin;
@@ -1187,6 +1195,10 @@ ul.form_elements{
       width: 200px;
       @include inline-block;
       vertical-align: top;
+      text-align: right;
+      padding-right: 1ex;
+      padding-top: 2px;
+      color: lighten($text, 20%);
     }
     
     label.inline{
