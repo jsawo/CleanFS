@@ -442,16 +442,20 @@ a.button:active, button.button:active{
 }
 
 body .positive {
+  color: white;
+  background: lighten(#5F9729, 10%);
+  border: solid 1px darken(#5F9729, 2%);
+  border-top:   solid 1px lighten(#5F9729, 15%);
+  border-right: solid 1px lighten(#5F9729, 15%);
+}
+
+a.positive:hover, button.positive:hover {
+  background-color:lighten(#5F9729, 45%);
+  border: solid 1px darken(#5F9729, 0%);
   color:#529214;
 }
 
-a.positive:hover {
-  background-color:#E6EFC2;
-  border:1px solid #C6D880;
-  color:#529214;
-}
-
-a.positive:active {
+a.positive:active, button.positive:active{
   background-color:#529214;
   border:1px solid #529214;
   color:#fff;
