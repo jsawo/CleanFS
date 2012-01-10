@@ -79,7 +79,7 @@
       </div>
 
       <div class="clear"></div>
-      <?php $show_message = array('details', 'index', 'newtask', 'reports', 'depends');
+      <?php $show_message = array(/*'details',*/ 'index', /*'newtask',*/ 'reports', 'depends');
             $actions = explode('.', Req::val('action'));
             if ($proj->prefs['intro_message'] && (in_array($do, $show_message) || in_array(reset($actions), $show_message))): ?>
       <div id="intromessage">{!TextFormatter::render($proj->prefs['intro_message'], false, 'msg', $proj->id,

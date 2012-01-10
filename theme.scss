@@ -479,10 +479,6 @@ a.negative:active {
   display: block;
 }
 
-body.details #intromessage{
-  display: none;
-}
-
 #tasklist{
   @include bodyblock;
   
