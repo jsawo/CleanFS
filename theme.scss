@@ -1256,6 +1256,15 @@ ul.slim{
     }
   }
 }
+.dateselect {
+  clear: both;
+  label:first-child{
+    width: 120px;
+    text-align: right;
+    padding-right: 5px;
+    float: left;
+  }
+}
 
 /* fancy dual selects */
 .double_select{

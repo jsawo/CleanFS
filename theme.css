@@ -1466,13 +1466,25 @@ ul.slim li div.userSelectWidget input {
   width: 120px;
 }
 
-/* fancy dual selects */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/fs\/themes\/cleanfs\/theme\.scss}line{font-family:\000031259}}
+.dateselect {
+  clear: both;
+}
 @media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/fs\/themes\/cleanfs\/theme\.scss}line{font-family:\000031261}}
+.dateselect label:first-child {
+  width: 120px;
+  text-align: right;
+  padding-right: 5px;
+  float: left;
+}
+
+/* fancy dual selects */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/fs\/themes\/cleanfs\/theme\.scss}line{font-family:\000031270}}
 .double_select {
   width: 350px;
   position: relative;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/fs\/themes\/cleanfs\/theme\.scss}line{font-family:\000031265}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/fs\/themes\/cleanfs\/theme\.scss}line{font-family:\000031274}}
 .double_select .dualselect_selectable {
   height: 220px;
   width: 40%;
@@ -1485,7 +1497,7 @@ ul.slim li div.userSelectWidget input {
   /* target IE7 only */
   vertical-align: middle;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/fs\/themes\/cleanfs\/theme\.scss}line{font-family:\000031272}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/fs\/themes\/cleanfs\/theme\.scss}line{font-family:\000031281}}
 .double_select .dualselect_buttons {
   width: 16%;
   display: -moz-inline-stack;
@@ -1497,12 +1509,12 @@ ul.slim li div.userSelectWidget input {
   /* target IE7 only */
   vertical-align: middle;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/fs\/themes\/cleanfs\/theme\.scss}line{font-family:\000031277}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/fs\/themes\/cleanfs\/theme\.scss}line{font-family:\000031286}}
 .double_select .dualselect_buttons button {
   width: 100%;
   padding: 3px;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/fs\/themes\/cleanfs\/theme\.scss}line{font-family:\000031283}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/fs\/themes\/cleanfs\/theme\.scss}line{font-family:\000031292}}
 .double_select .dualselect_selected {
   height: 220px;
   /*min-width: 12em;*/
@@ -1516,19 +1528,19 @@ ul.slim li div.userSelectWidget input {
   vertical-align: middle;
   width: 40%;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/fs\/themes\/cleanfs\/theme\.scss}line{font-family:\000031290}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/fs\/themes\/cleanfs\/theme\.scss}line{font-family:\000031299}}
 .double_select .dualselect_selected select {
   width: 100%;
   height: 80%;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/fs\/themes\/cleanfs\/theme\.scss}line{font-family:\000031295}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/fs\/themes\/cleanfs\/theme\.scss}line{font-family:\000031304}}
 .double_select .dualselect_selected button {
   height: 10%;
   width: 100%;
 }
 
 /* closing task form */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/fs\/themes\/cleanfs\/theme\.scss}line{font-family:\000031307}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/fs\/themes\/cleanfs\/theme\.scss}line{font-family:\000031316}}
 div#closeform {
   border-radius: 3px;
   -moz-border-radius: 3px;
