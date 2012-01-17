@@ -69,15 +69,6 @@
     <?php endif; ?>
 
     <div id="content">
-      <div id="showtask">
-        <form action="{$baseurl}index.php" method="get">
-          <div>
-            <button type="submit">{L('showtask')} #</button>
-            <input id="taskid" name="show_task" class="text" type="text" size="10" accesskey="t" />
-          </div>
-        </form>
-      </div>
-
       <div class="clear"></div>
       <?php $show_message = array(/*'details',*/ 'index', /*'newtask',*/ 'reports', 'depends');
             $actions = explode('.', Req::val('action'));
