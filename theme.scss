@@ -491,6 +491,10 @@ a.negative:active {
   table{
     width: 100%;
   }
+  
+  tr:nth-child(2n-1){
+    background-color: darken($near_background, 4%);
+  }
 }
 
 #search{
@@ -767,7 +771,12 @@ form #taskdetails{
       
       li{
         clear: both;
-        padding-top: 4%;
+        margin-top: 2%;
+        padding-top: 1%;
+        padding-bottom: 1%;
+        overflow: auto;
+        width: 100%;
+        @include rounded-corners(10px);
         
         .label{
           display: block;
@@ -781,6 +790,10 @@ form #taskdetails{
           float: right;
           width: 50%;          
         }
+      }
+      
+      li:nth-child(2n-1){
+        background-color: darken($far_background, 3%);        
       }
     }
   }
