@@ -792,9 +792,9 @@ form #taskdetails #taskdetailsfull {
         padding-bottom: 1%;
         overflow: auto;
         width: 100%;
-        border-radius: 10px;
-        -moz-border-radius: 10px;
-        -webkit-border-radius: 10px; }
+        border-radius: 4px;
+        -moz-border-radius: 4px;
+        -webkit-border-radius: 4px; }
 @media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/fs\/themes\/cleanfs\/theme\.scss}line{font-family:\00003781}}
         #taskdetails #taskfields ul.fieldslist li .label {
           display: block;

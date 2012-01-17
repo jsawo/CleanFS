@@ -776,7 +776,7 @@ form #taskdetails{
         padding-bottom: 1%;
         overflow: auto;
         width: 100%;
-        @include rounded-corners(10px);
+        @include rounded-corners(4px);
         
         .label{
           display: block;
