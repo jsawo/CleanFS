@@ -27,9 +27,6 @@
 					 {!tpl_options($arr, Req::val('percent_complete', $task_details['percent_complete']))}
 					</select>
 				</li>
-			</ul>
-			
-      <ul class="form_elements slim">
 				
 				<li>
 					<label for="tasktype">{L('tasktype')}</label>

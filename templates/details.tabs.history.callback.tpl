@@ -1,5 +1,5 @@
 <?php if ($details && count($histories)): ?>
-<table class="history">
+<table class="userlist history">
   <tr>
     <th>{L('previousvalue')}</th>
     <th>{L('newvalue')}</th>
@@ -10,7 +10,7 @@
   </tr>
 </table>
 <?php else: ?>
-<table class="history">
+<table class="userlist history">
   <tr>
     <th>{L('eventdate')}</th>
     <th>{L('user')}</th>

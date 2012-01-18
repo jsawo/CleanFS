@@ -825,8 +825,15 @@ form #taskdetails{
   @include bodyblock;
 }
 
-.history tr:nth-child(2n-1){
-  background-color: darken($far_background, 3%);          
+.userlist{
+  
+  th{
+    background-color: darken($far_background, 10%);
+  }
+  
+  tr:nth-child(2n-1) td{
+    background-color: darken($far_background, 3%);          
+  }
 }
 
 #content > #submenu{
@@ -953,27 +960,8 @@ table{
   }
 }
 
-div.box, p.box, table.userlist {
+div.box, p.box {
   @include bodyblock;
-}
-
-table.userlist {
-	border-collapse:collapse;
-	width:98%;
-
-  td.imgcol {
-    padding:0 0.2em;
-  }
- 
-  td,table.userlist th {
-    border:1px solid #ccc;
-    padding:0.1em 0.2em;
-  }
-  
-  th{
-    border-bottom: solid 1px  lighten($top1, 40%);
-    border-top: solid 1px     lighten($top1, 40%);
-  }
 }
 
 div.roadmap{
