@@ -41,6 +41,7 @@
   $twocol_sidebar_width: 280px;
   $twocol_content_margin: 300px;
   
+  $minwidth: 660px;
 
 /* ----------------- MIXINS --------------------- */
 
@@ -152,6 +153,7 @@ a:hover{
 
 #content{
   padding: 10px 20px 10px 20px;
+  min-width: $minwidth;
 }
 
 #footer{
@@ -314,6 +316,7 @@ div#mysearches {
   position: absolute;
   top: 81px;
   width: 100%;
+  min-width: $minwidth;
 
   #pm-menu-list {
     list-style:none;
@@ -329,8 +332,8 @@ div#mysearches {
       a{
         display: block;
         line-height:1.4em;
-        padding:4px 0.4em 3px 25px;
-        padding: 11px 17px 8px 41px;
+        padding: 11px 11px 8px 35px;
+        margin-right: 2px;
         color: $far_background;
         text-decoration: none;    
         border-left: dotted 1px $top1;
@@ -338,8 +341,7 @@ div#mysearches {
         border-top-left-radius: 3px;
         border-top-right-radius: 3px;
         background-repeat: no-repeat;
-        background-position: 16px 50%;
-        margin-right: 3px;
+        background-position: 12px 50%;
       }
             
       a:hover{
@@ -769,6 +771,8 @@ form #taskdetails{
     ul.fieldslist{
       margin-bottom: 35px;
       list-style: none;
+      margin-right: 1ex;
+      padding-left: 1ex;
       
       li{
         clear: both;
@@ -802,7 +806,6 @@ form #taskdetails{
   #showvotes{
     position: absolute;
     @include bodyblock;
-    /*@include box-shadow;*/
   }
   
   #taskdetailsfull{
@@ -814,7 +817,6 @@ form #taskdetails{
     margin-top: 15px;
     border-top:1px solid $box_border;
     min-height:50px;
-    /*float:left;*/
     padding:8px 5px;
   }
 }
@@ -952,12 +954,6 @@ table{
 }
 
 div.box, p.box, table.userlist {
-	/*border:1px solid #ccc;*/
-	/*background-color:#e6eef6;*/
-	/*color:#000;*/
-
-	/*margin:1em 0 30px;*/
-	/*padding:0;*/
   @include bodyblock;
 }
 
