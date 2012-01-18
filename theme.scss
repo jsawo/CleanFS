@@ -1001,6 +1001,40 @@ div.success {
   color: darken(#53821F, 18%);
 }
 
+a#show_loginbox{
+  margin-right: 5px;
+}
+
+#menu a#show_loginbox.active{
+    border-radius: 10px 10px 0 0;
+}
+
+
+#loginbox{
+  @include rounded-corners(4px);
+	background: $inverse_link;
+  border: solid 3px $dominant;
+  right: 5px;
+  z-index: 200;
+  height: 60px;
+  width: 430px;
+  padding-top: 15px;
+  margin-top: 1px;
+	top: 1.4em;
+  box-shadow: none;
+  
+  #login{
+    label{
+      color: $text;
+    }
+    
+    a{
+      color: $text;
+      text-decoration: underline;
+    }
+  }
+}
+
 form#login{
   position: relative;
   
@@ -1021,12 +1055,13 @@ form#login{
     left: 20px;
     
     a{
-      color: $inverse_link;
       padding: 3px 7px;      
     }
 
     a:hover{
       background: lighten($top1, 5%);
+      text-decoration: none;
+      color: $inverse_link;      
       @include rounded-corners(10px);
     }
 
