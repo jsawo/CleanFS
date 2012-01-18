@@ -429,7 +429,8 @@ a.button, button.button{
 }
 
 a.button:hover, button.button:hover{
-  background-color: lighten($near_background, 5%);
+  
+  background-color: darken($near_background, 5%);
   border:1px solid darken($box_border, 25%);
 }
 
