@@ -792,11 +792,18 @@ form #taskdetails{
         }
       }
       
-      li:nth-child(2n-1){
+      > li:nth-child(2n-1){
         background-color: darken($far_background, 3%);        
       }
     }
   }
+  
+  #showvotes{
+    position: absolute;
+    @include bodyblock;
+    /*@include box-shadow;*/
+  }
+  
   #taskdetailsfull{
     margin-left: $twocol_content_margin;
     padding: 2em 3em;
