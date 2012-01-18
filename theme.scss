@@ -95,7 +95,7 @@
 	visibility:hidden;
 }
 
-div.clear {
+.clear {
 	clear:both;
 }
 
@@ -826,7 +826,6 @@ form #taskdetails{
 }
 
 .userlist{
-  
   th{
     background-color: darken($far_background, 10%);
   }
@@ -834,6 +833,11 @@ form #taskdetails{
   tr:nth-child(2n-1) td{
     background-color: darken($far_background, 3%);          
   }
+}
+
+#related .related{
+  float: left;
+  margin-right: 2em;
 }
 
 #content > #submenu{

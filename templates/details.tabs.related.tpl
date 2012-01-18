@@ -1,8 +1,8 @@
 <div id="related" class="tab">
-  <table> <?php // table based layout, sorry. if anyone has the desire to face browser bugs, feel free to rewrite it with floats ?>
-   <tr><td>
+  
+  <div class="related">
     <form method="post" action="{CreateUrl('details', $task_details['task_id'])}#related" >
-        <table id="tasks_related" class="userlist">
+      <table id="tasks_related" class="userlist">
         <tr>
           <th>
             <a class="toggle_selected" href="javascript:ToggleSelected('tasks_related')">
@@ -26,24 +26,24 @@
             <input type="hidden" name="task_id" value="{$task_details['task_id']}" />
             <button type="submit">{L('remove')}</button>
           </td>
-        </tr>
-        </table>
+        </tr> 
+      </table>
     </form>
-    </td><td>
+  </div>
     
+  <div class="related">
     <table id="duplicate_tasks" class="userlist">
-        <tr>
-          <th>{L('duplicatetasks')} ({count($duplicates)})</th>
-        </tr>
-        <?php foreach ($duplicates as $row): ?>
-        <tr><td>{!tpl_tasklink($row)}</td></tr>
-        <?php endforeach; ?>
+      <tr>
+        <th>{L('duplicatetasks')} ({count($duplicates)})</th>
+      </tr>
+      <?php foreach ($duplicates as $row): ?>
+      <tr><td>{!tpl_tasklink($row)}</td></tr>
+      <?php endforeach; ?>
     </table>
-    </td></tr>
-  </table>
+  </div>
 
   <?php if ($user->can_edit_task($task_details) && !$task_details['is_closed']): ?>
-  <form action="{CreateUrl('details', $task_details['task_id'])}#related" method="post" id="formaddrelatedtask">
+  <form class="clear" action="{CreateUrl('details', $task_details['task_id'])}#related" method="post" id="formaddrelatedtask">
     <div>
       <input type="hidden" name="action" value="details.add_related" />
       <input type="hidden" name="task_id" value="{$task_details['task_id']}" />
