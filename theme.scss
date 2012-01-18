@@ -404,9 +404,7 @@ a.button, button.button{
   margin: 0.3em 0.3em 0.3em 0;
   padding: 8px 13px 8px 10px;   /* Links */
   
-  border: 1px solid darken($box_border, 7%);
-  border-top: 1px solid lighten($box_border, 2%);
-  border-left: 1px solid lighten($box_border, 2%);
+  border: 1px solid darken($box_border, 15%);
   
   @include rounded-corners(4px);
   @include box-shadow(#ddd, 1px);
