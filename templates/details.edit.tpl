@@ -14,6 +14,24 @@
     <div id="taskfields">
       <ul class="form_elements slim">
 				<li>
+					<label for="status">{L('status')}</label>
+					<select id="status" name="item_status">
+					 {!tpl_options($proj->listTaskStatuses(), Req::val('item_status', $task_details['item_status']))}
+					</select>
+				</li>
+
+				<li>
+					<label for="percent">{L('percentcomplete')}</label>
+					<select id="percent" name="percent_complete">
+					 <?php $arr = array(); for ($i = 0; $i<=100; $i+=10) $arr[$i] = $i.'%'; ?>
+					 {!tpl_options($arr, Req::val('percent_complete', $task_details['percent_complete']))}
+					</select>
+				</li>
+			</ul>
+			
+      <ul class="form_elements slim">
+				
+				<li>
 					<label for="tasktype">{L('tasktype')}</label>
 					<select id="tasktype" name="task_type">
 					 {!tpl_options($proj->listTaskTypes(), Req::val('task_type', $task_details['task_type']))}
@@ -24,13 +42,6 @@
 					<label for="category">{L('category')}</label>
 					<select id="category" name="product_category">
 					 {!tpl_options($proj->listCategories(), Req::val('product_category', $task_details['product_category']))}
-					</select>
-				</li>
-	
-				<li>
-					<label for="status">{L('status')}</label>
-					<select id="status" name="item_status">
-					 {!tpl_options($proj->listTaskStatuses(), Req::val('item_status', $task_details['item_status']))}
 					</select>
 				</li>
 	
@@ -92,15 +103,7 @@
 					<label for="duedate">{L('duedate')}</label>
 					{!tpl_datepicker('due_date', '', Req::val('due_date', $task_details['due_date']))}
 				</li>
-	
-				<li>
-					<label for="percent">{L('percentcomplete')}</label>
-					<select id="percent" name="percent_complete">
-					 <?php $arr = array(); for ($i = 0; $i<=100; $i+=10) $arr[$i] = $i.'%'; ?>
-					 {!tpl_options($arr, Req::val('percent_complete', $task_details['percent_complete']))}
-					</select>
-				</li>
-	
+		
 				<?php if ($user->can_change_private($task_details)): ?>
 				<li>
 					<label for="private">{L('private')}</label>

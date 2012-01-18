@@ -90,19 +90,6 @@
   <div id="taskfields">
 	 <ul class="fieldslist">
 		<li>
-			<span class="label">{L('tasktype')}</span>
-			<span class="value">{$task_details['tasktype_name']}</span>
-		</li>
-		<li>
-			<span class="label">{L('category')}</span>
-			<span class="value">
-				<?php foreach ($parent as $cat): ?>
-				{$cat['category_name']} &#8594;
-				<?php endforeach; ?>
-				{$task_details['category_name']}
-			</span>
-		</li>
-		<li>
 			<span class="label">{L('status')}</span>
 			<span class="value">
 				<?php if ($task_details['is_closed']): ?>
@@ -113,6 +100,30 @@
 								 &nbsp; <strong class="reopened">{L('reopened')}</strong>
 								<?php endif; ?>
 				<?php endif; ?>
+			</span>
+		</li>
+		<li>
+			<span class="label">{L('percentcomplete')}</span>
+			<span class="value">
+				<div class="progress_bar_container" style="width: 90px">
+					<span>{$task_details['percent_complete']}%</span>
+					<div class="progress_bar" style="width:{$task_details['percent_complete']}%"></div>
+				</div>
+			</span>
+		</li>
+	</ul>
+	<ul class="fieldslist">
+		<li>
+			<span class="label">{L('tasktype')}</span>
+			<span class="value">{$task_details['tasktype_name']}</span>
+		</li>
+		<li>
+			<span class="label">{L('category')}</span>
+			<span class="value">
+				<?php foreach ($parent as $cat): ?>
+				{$cat['category_name']} &#8594;
+				<?php endforeach; ?>
+				{$task_details['category_name']}
 			</span>
 		</li>
 		<li>
@@ -157,15 +168,8 @@
 			<span class="label">{L('duedate')}</span>
 			<span class="value">{formatDate($task_details['due_date'], false, L('undecided'))}</span>
 		</li>
-		<li>
-			<span class="label">{L('percentcomplete')}</span>
-			<span class="value">
-				<div class="progress_bar_container" style="width: 90px">
-					<span>{$task_details['percent_complete']}%</span>
-					<div class="progress_bar" style="width:{$task_details['percent_complete']}%"></div>
-				</div>
-			</span>
-		</li>
+	</ul>
+	<ul class="fieldslist">
 		<li class="votes">
 			<span class="label">{L('votes')}</span>
 			<span class="value">
