@@ -1,9 +1,13 @@
 <div id="menu">
 
-<?php if ($user->isAnon()):
-          $this->display('loginbox.tpl');
-      else: ?>
 		<ul id="menu-list">
+<?php if ($user->isAnon()): ?>
+			<li class="first">
+				<a id="show_loginbox" href="" accesskey="l" href="#login" onclick="this.addClassName('active'); showhidestuff('loginbox');return false;">{L('login')}</a>
+				<div id="loginbox" class="popup hide">
+		    <?php $this->display('loginbox.tpl'); ?>
+			</div></li>
+      <?php else: ?>
 			<li class="first" onmouseover="perms.do_later('show')" onmouseout="perms.hide()">
 				<a id="profilelink"
 					<?php if(isset($_GET['do']) and $_GET['do'] == 'myprofile'): ?> class="active" <?php endif; ?>
