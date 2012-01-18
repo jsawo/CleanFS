@@ -821,7 +821,10 @@ form #taskdetails{
 
 #comments, #related, #notify, #remind, #history{
   @include bodyblock;
-  /*margin-left: $twocol_content_margin;*/
+}
+
+.history tr:nth-child(2n-1){
+  background-color: darken($far_background, 3%);          
 }
 
 #content > #submenu{
