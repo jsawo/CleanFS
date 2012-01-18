@@ -56,16 +56,17 @@
 							</div>
 
 		<?php endif; ?>
+		
+		<?php if ($user->can_edit_task($task_details)): ?>
+			<a id="edittask" class="button" href="{CreateURL('edittask', $task_details['task_id'])}"> {L('edittask')}</a>
+		<?php endif; ?>
+
 		<?php if ($user->can_take_ownership($task_details)): ?>
 			<a id="own" class="button" href="{$_SERVER['SCRIPT_NAME']}?do=details&amp;task_id={$task_details['task_id']}&amp;action=takeownership&amp;ids={$task_details['task_id']}"> {L('assigntome')}</a>
 		<?php endif; ?>
 
 		<?php if ($user->can_add_to_assignees($task_details) && !empty($task_details['assigned_to'])): ?>
 			<a id="own_add" class="button" href="{$_SERVER['SCRIPT_NAME']}?do=details&amp;task_id={$task_details['task_id']}&amp;action=addtoassignees&amp;ids={$task_details['task_id']}"> {L('addmetoassignees')}</a>
-		<?php endif; ?>
-
-		<?php if ($user->can_edit_task($task_details)): ?>
-			<a id="edittask" class="button" href="{CreateURL('edittask', $task_details['task_id'])}"> {L('edittask')}</a>
 		<?php endif; ?>
 
 	<?php endif; ?>
